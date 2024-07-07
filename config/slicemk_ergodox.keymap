@@ -61,97 +61,6 @@ behaviors {
     #endif
 
     //
-    // SHIFT_HOLDING_TYPE defines the flavor of ZMK hold-tap behavior to use
-    // for index fingers (which Miryoku assigns to Shift) on home row keys.
-    //
-    // NOTE: The "tap-preferred" flavor of ZMK hold-tap for index finger keys
-    // allows faster activation of the Shift modifier (without having to wait
-    // for the modified key to be released as the "balanced" flavor requires).
-    // Typing streaks and the `hold-trigger-on-release` setting are disabled
-    // for the index fingers so as not to hinder their speed and dexterity.
-    //
-    #ifndef SHIFT_HOLDING_TYPE
-    #define SHIFT_HOLDING_TYPE "tap-preferred"
-    #endif
-
-    //
-    // SHIFT_HOLDING_TIME defines how long you need to hold (milliseconds)
-    // index finger keys in order to send their modifiers to the computer
-    // (i.e. "register" them) for mod-click mouse usage (e.g. Shift-Click).
-    //
-    // CAUTION: You'll need to perform inward rolls from pinky->ring->middle
-    // fingers toward the index fingers when activating multiple modifiers
-    // because `hold-trigger-on-release` is disabled for the index fingers.
-    // Otherwise, you may be surprised that the index fingers' modifier is
-    // sent immediately without the rest of your multi-mod chord when you
-    // perform outward rolls from your index fingers toward your pinkies.
-    //
-    #ifndef SHIFT_HOLDING_TIME
-    #define SHIFT_HOLDING_TIME 200
-    #endif
-
-    //
-    // SHIFT_STREAK_DECAY defines how long you need to wait (milliseconds)
-    // after typing before you can use home row mods again.  It prevents
-    // unintended activation of home row mods when you're actively typing.
-    //
-    #ifndef SHIFT_STREAK_DECAY
-    #define SHIFT_STREAK_DECAY 80
-    #endif
-
-    //
-    // SHIFT_REPEAT_DECAY defines how much time you have left (milliseconds)
-    // after tapping a key to hold it again in order to make it auto-repeat.
-    //
-    #ifndef SHIFT_REPEAT_DECAY
-    #define SHIFT_REPEAT_DECAY 300
-    #endif
-
-    //
-    // THUMB_HOLDING_TYPE defines the flavor of ZMK hold-tap behavior to use
-    // for the thumbs (which are assigned to 6 layers in the Miryoku system).
-    //
-    // NOTE: The "balanced" flavor of ZMK hold-tap provides instant modifier
-    // activation for the symbol layer (if the tapped symbol key is released
-    // while the thumb layer key is still held down) for quicker programming.
-    //
-    #ifndef THUMB_HOLDING_TYPE
-    #define THUMB_HOLDING_TYPE "balanced"
-    #endif
-
-    //
-    // THUMB_HOLDING_TIME defines how long you need to hold (milliseconds)
-    // a thumb key to activate a layer.  Shorter holds are treated as taps.
-    //
-    #ifndef THUMB_HOLDING_TIME
-    #define THUMB_HOLDING_TIME 200
-    #endif
-
-    //
-    // THUMB_REPEAT_DECAY defines how much time you have left (milliseconds)
-    // after tapping a key to hold it again in order to make it auto-repeat.
-    //
-    #ifndef THUMB_REPEAT_DECAY
-    #define THUMB_REPEAT_DECAY 300
-    #endif
-
-    //
-    // SPACE_HOLDING_TIME defines how long you need to hold (milliseconds)
-    // the space thumb key to activate.  Shorter holds are treated as taps.
-    //
-    #ifndef SPACE_HOLDING_TIME
-    #define SPACE_HOLDING_TIME 170
-    #endif
-
-    //
-    // SPACE_REPEAT_DECAY defines how much time you have left (milliseconds)
-    // after tapping a key to hold it again in order to make it auto-repeat.
-    //
-    #ifndef SPACE_REPEAT_DECAY
-    #define SPACE_REPEAT_DECAY 200
-    #endif
-
-    //
     // Ergodox Wireless key positions index for positional hold-tap
     #define LEFT_HAND_KEYS      \
          1  2  3  4  5  6  7   \
@@ -287,11 +196,11 @@ behaviors {
 		layer_5 {
 			bindings = <
 				&sys_off
-				&none &none &none &none &none &none &none &none &none          &none           &none          &none           &none &none
-				&none &none &none &none &none &none &none &none &msc SCRL_LEFT &msc SCRL_RIGHT &mmv MOVE_UP   &none           &none &none
-				&none &none &none &none &none &none             &msc SCRL_UP   &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
-				&none &none &none &none &none &none &none &none &msc SCRL_DOWN &mkp LCLK       &mkp MCLK      &mkp RCLK       &none &none
-				&none &none &none &none &none                                  &none           &none          &none           &none &none
+				&none &none &none      &none               &none     			   &none &none &none &none          &none           &none          &none           &none &none
+				&none &none &kp C_MUTE &kp C_VOL_UP        &kp C_VOL_DN      &none &none &none &msc SCRL_LEFT &msc SCRL_RIGHT &mmv MOVE_UP   &none           &none &none
+				&none &none &kp C_PREV &kp C_PP 					 &kp C_NEXT 			 &none             &msc SCRL_UP   &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
+				&none &none &none      &none    					 &none      			 &none &none &none &msc SCRL_DOWN &mkp LCLK       &mkp MCLK      &mkp RCLK       &none &none
+				&none &none &none      &none    					 &none                                       &none           &none          &none           &none &none
 				                              &none &none &none &none
 				                        &none &none &none &none &none          &none
 				                                    &none &none
