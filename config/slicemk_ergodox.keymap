@@ -147,8 +147,8 @@
 				&none 									&kp F1       &kp F2       &kp F3           &kp F4         &kp F5 &none  &kp F12    &kp F6            &kp F7         &kp F8       &kp F9          &kp F10 &kp F11
 				&none									  &none        &none        &none            &none          &none  &trans &kp INSERT &kp HOME          &kp PAGE_DOWN  &kp PAGE_UP  &kp END         &trans  &trans
 				&mt LEFT_CONTROL ESCAPE &kp LEFT_GUI &kp LEFT_ALT &kp LEFT_CONTROL &kp LEFT_SHIFT &none                    &kp LEFT_ARROW    &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &trans  &trans
-				&none 									&none        &none        &none            &none          &none  &trans &trans     &kp LA(BACKSPACE) &kp BACKSPACE  &kp DELETE   &kp LA(DELETE)  &trans  &trans
-				&none 									&none        &none        &none            &none                                                     &none          &none        &none           &none   &none
+				&none 									&none        &kp LC(X)    &kp LC(C)        &kp LC(V)      &none  &trans &trans     &kp LA(BACKSPACE) &kp BACKSPACE  &kp DELETE   &kp LA(DELETE)  &trans  &trans
+				&none 									&none        &none        &none            &none                                                 &none          &none        &none           &none   &none
 				                                                                &trans &trans &none      &none
 				                                                 &trans         &trans &trans &none      &none             &none
 				                                                                       &trans &none
