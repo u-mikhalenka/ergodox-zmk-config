@@ -73,7 +73,7 @@
 &kp LEFT_SHIFT           &kp Z               &kp X               &kp C                     &kp V                 &kp B             &kp BACKSPACE    &kp DELETE         &kp N            &kp M                  &kp COMMA             &kp PERIOD           &kp SLASH                    &kp RETURN
 &kp F13                  &mo LAYER_MOUSE     &kp LEFT_ALT        &kp LC(LS(LA(LEFT_GUI)))  &lt LAYER_NAV SPACE                                                                          &lt LAYER_NAV SPACE    &none                 &kp LEFT_BRACKET     &kp RIGHT_BRACKET            &mo LAYER_FN
                                                                                                                  &kp LEFT_ALT      &mo 3            &kp K_APPLICATION  &kp INSERT
-                                                                                           &kp LEFT_SHIFT        &kp LEFT_CONTROL  &kp LEFT_ALT     &none              &kp LEFT_CONTROL &kp RETURN
+                                                                                           &kp LEFT_SHIFT        &kp LEFT_CONTROL  &kp LEFT_ALT     &none              &kp RETURN       &kp LEFT_CONTROL
                                                                                                                                    &kp LEFT_GUI     &none
             >;
         };
