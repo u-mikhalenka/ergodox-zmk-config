@@ -109,14 +109,14 @@
         fn_layer {
             bindings = <
 &sys_off
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &bootloader    &bootloader  &none  &none    &none    &none    &none    &to LAYER_MAIN
-&out OUT_USB  &kp F1        &kp F2        &kp F3        &kp F4        &none  &none          &none        &none  &kp F13  &kp F14  &kp F15  &kp F16  &none
-&out OUT_BLE  &kp F5        &kp F6        &kp F7        &kp F8        &to 7                              &none  &kp F17  &kp F18  &kp F19  &kp F20  &none
-&none         &kp F9        &kp F10       &kp F11       &kp F12       &to 0  &none          &none        &none  &kp F21  &kp F22  &kp F23  &kp F24  &to LAYER_GAME
-&none         &none         &none         &none         &none                                                   &none    &none    &none    &none    &none
-                                                                      &none  &none          &none        &none
-                                                        &none         &none  &none          &none        &none  &none
-                                                                             &none          &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &BT_CLR  &bootloader    &bootloader  &none  &none    &none    &none    &none    &to LAYER_MAIN
+&out OUT_USB  &kp F1        &kp F2        &kp F3        &kp F4        &none    &none          &none        &none  &kp F13  &kp F14  &kp F15  &kp F16  &none
+&out OUT_BLE  &kp F5        &kp F6        &kp F7        &kp F8        &to 7                                &none  &kp F17  &kp F18  &kp F19  &kp F20  &none
+&none         &kp F9        &kp F10       &kp F11       &kp F12       &to 0    &none          &none        &none  &kp F21  &kp F22  &kp F23  &kp F24  &to LAYER_GAME
+&none         &none         &none         &none         &none                                                     &none    &none    &none    &none    &none
+                                                                      &none    &none          &none        &none
+                                                        &none         &none    &none          &none        &none  &none
+                                                                               &none          &none
             >;
         };
 
