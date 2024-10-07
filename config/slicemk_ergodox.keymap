@@ -67,56 +67,70 @@
         main_layer {
             bindings = <
 &sys_off
-&none                    &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3              &kp NUMBER_4          &kp NUMBER_5      &none            &none              &kp NUMBER_6     &kp NUMBER_7           &kp NUMBER_8          &kp NUMBER_9         &kp NUMBER_0                 &kp MINUS
-&kp TAB                  &kp Q               &kp W               &kp E                     &kp R                 &kp T             &kp GRAVE        &kp EQUAL          &kp Y            &kp U                  &kp I                 &kp O                &kp P                        &kp BACKSLASH
-&mt LEFT_CONTROL ESCAPE  &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D       &homey_left LSHIFT F  &kp G                                                 &kp H            &homey_right RSHIFT J  &homey_right LCTRL K  &homey_right RALT L  &homey_right LGUI SEMICOLON  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT           &kp Z               &kp X               &kp C                     &kp V                 &kp B             &kp BACKSPACE    &kp DELETE         &kp N            &kp M                  &kp COMMA             &kp PERIOD           &kp SLASH                    &kp RETURN
-&kp F13                  &mo LAYER_MOUSE     &kp LEFT_ALT        &kp LC(LS(LA(LEFT_GUI)))  &lt LAYER_NAV SPACE                                                                          &lt LAYER_NAV SPACE    &none                 &kp LEFT_BRACKET     &kp RIGHT_BRACKET            &mo LAYER_FN
-                                                                                                                 &kp LEFT_ALT      &mo 3            &kp K_APPLICATION  &kp INSERT
-                                                                                           &kp LEFT_SHIFT        &kp LEFT_CONTROL  &kp LEFT_ALT     &none              &kp RETURN       &kp LEFT_CONTROL
+&none                    &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3              &kp NUMBER_4          &kp NUMBER_5      &none            &none              &kp NUMBER_6  &kp NUMBER_7           &kp NUMBER_8          &kp NUMBER_9         &kp NUMBER_0                 &kp MINUS
+&kp TAB                  &kp Q               &kp W               &kp E                     &kp R                 &kp T             &kp GRAVE        &kp EQUAL          &kp Y         &kp U                  &kp I                 &kp O                &kp P                        &kp BACKSLASH
+&mt LEFT_CONTROL ESCAPE  &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D       &homey_left LSHIFT F  &kp G                                                 &kp H         &homey_right RSHIFT J  &homey_right LCTRL K  &homey_right RALT L  &homey_right LGUI SEMICOLON  &kp SINGLE_QUOTE
+&kp LEFT_SHIFT           &kp Z               &kp X               &kp C                     &kp V                 &kp B             &kp BACKSPACE    &kp DELETE         &kp N         &kp M                  &kp COMMA             &kp PERIOD           &kp SLASH                    &kp RETURN
+&kp F13                  &mo 6               &kp LEFT_ALT        &kp LC(LS(LA(LEFT_GUI)))  &lt 2 SPACE                                                                               &lt 2 SPACE            &none                 &kp LEFT_BRACKET     &kp RIGHT_BRACKET            &mo 9
+                                                                                                                 &kp LEFT_ALT      &mo 9            &kp K_APPLICATION  &kp INSERT
+                                                                                           &kp LEFT_SHIFT        &kp LEFT_CONTROL  &kp LEFT_ALT     &none              &lt 4 RETURN  &lt 3 SPACE
                                                                                                                                    &kp LEFT_GUI     &none
             >;
         };
 
-        testing_layer {
+        game_layer {
             bindings = <
 &sys_off
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                                                            &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-                                                                      &kp NUMBER_0  &kp NUMBER_1    &kp NUMBER_0  &kp NUMBER_1
-                                                        &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_2    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4
-                                                                                    &kp NUMBER_5    &kp NUMBER_5
+&kp ESCAPE        &trans  &trans  &trans  &trans     &trans  &kp N6    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &trans  &sl 7   &trans  &kp SPACE                                    &trans  &trans  &trans  &trans  &trans
+                                                     &trans  &trans    &trans  &trans
+                                          &trans     &trans  &trans    &trans  &trans  &trans
+                                                             &trans    &trans
+            >;
+        };
+
+        nav_layer {
+            bindings = <
+&sys_off
+&none                    &kp F1        &kp F2        &kp F3            &kp F4          &kp F5  &none     &kp F12     &kp F6             &kp F7          &kp F8        &kp F9           &kp F10  &kp F11
+&none                    &none         &none         &none             &none           &none   &trans    &kp INSERT  &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans   &trans
+&mt LEFT_CONTROL ESCAPE  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none                         &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
+&none                    &none         &kp LC(X)     &kp LC(C)         &kp LC(V)       &none   &trans    &trans      &kp LA(BACKSPACE)  &kp BACKSPACE   &kp DELETE    &kp LA(DELETE)   &trans   &trans
+&none                    &none         &none         &none             &none                                                            &none           &none         &none            &none    &none
+                                                                                       &trans  &trans    &trans      &trans
+                                                                       &trans          &trans  &trans    &trans      &trans             &trans
+                                                                                               &trans    &trans
             >;
         };
 
         symb_layer {
             bindings = <
 &sys_off
-&none     &kp F1         &kp F2            &kp F3                &kp F4                 &kp F5          &none     &kp F12     &kp F6             &kp F7          &kp F8        &kp F9           &kp F10  &kp F11
-&none     &trans         &kp LS(COMMA)     &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(PERIOD)  &trans    &kp INSERT  &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans   &trans
-&none     &kp SPACE      &kp EQUAL         &kp LS(NUMBER_9)      &kp LS(NUMBER_0)       &none                                 &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
-&none     &kp LS(MINUS)  &kp LS(NUMBER_7)  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none           &trans    &trans      &kp LA(BACKSPACE)  &kp BACKSPACE   &kp DELETE    &kp LA(DELETE)   &trans   &trans
-&none     &none          &none             &none                 &none                                                                           &none           &none         &none            &none    &none
-                                                                                        &trans          &trans    &none       &none
-                                                                 &trans                 &trans          &trans    &none       &none              &none
-                                                                                                        &trans    &none
+&none     &kp LS(NUMBER_1)        &kp LS(NUMBER_2)        &kp LS(NUMBER_3)          &kp LS(NUMBER_4)           &kp LS(N5)                &none     &kp F12     &kp F6             &kp F7          &kp F8        &kp F9           &kp F10  &kp F11
+&none     &trans                  &kp LS(COMMA)           &kp LS(LEFT_BRACKET)      &kp LS(RIGHT_BRACKET)      &kp LS(PERIOD)            &trans    &kp INSERT  &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans   &trans
+&none     &homey_left LGUI SPACE  &homey_left LALT EQUAL  &homey_left LCTRL LS(N9)  &homey_left LSHIFT LS(N0)  &kp COMMA                                       &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
+&none     &kp SLASH               &kp LS(NUMBER_7)        &kp LEFT_BRACKET          &kp RIGHT_BRACKET          &kp LS(NON_US_BACKSLASH)  &trans    &trans      &kp LA(BACKSPACE)  &kp BACKSPACE   &kp DELETE    &kp LA(DELETE)   &trans   &trans
+&none     &none                   &none                   &none                     &none                                                                                         &none           &none         &none            &none    &none
+                                                                                                               &trans                    &trans    &none       &none
+                                                                                    &trans                     &trans                    &trans    &none       &none              &none
+                                                                                                                                         &trans    &none
             >;
         };
 
         fn_layer {
             bindings = <
-&sys_off
-&bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none       &bootloader    &bootloader  &none  &none    &none    &none    &none    &to LAYER_MAIN
-&out OUT_USB   &kp F1        &kp F2        &kp F3        &kp F4        &none       &none          &none        &none  &kp F13  &kp F14  &kp F15  &kp F16  &none
-&out OUT_BLE   &kp F5        &kp F6        &kp F7        &kp F8        &to 7                                   &none  &kp F17  &kp F18  &kp F19  &kp F20  &none
-&bt BT_CLR     &kp F9        &kp F10       &kp F11       &kp F12       &to 0       &none          &none        &none  &kp F21  &kp F22  &kp F23  &kp F24  &to LAYER_GAME
-&bt BT_CLR_ALL &none         &none         &none         &none                                                        &none    &none    &none    &none    &none
-                                                                      &none       &none          &none        &none
-                                                        &none         &none       &none          &none        &none  &none
-                                                                                  &none          &none
+&trans
+&trans  &trans    &trans        &trans     &trans          &trans  &trans    &trans  &trans   &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans        &trans     &trans          &trans  &trans    &trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans
+&trans  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans                    &kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans
+&trans  &trans    &trans        &trans     &trans          &trans  &trans    &trans  &kp F10  &kp F1  &kt F2  &kp F3  &trans  &trans
+&trans  &trans    &trans        &trans     &trans                                             &trans  &trans  &trans  &trans  &trans
+                                                           &trans  &trans    &trans  &trans
+                                           &trans          &trans  &trans    &trans  &trans   &trans
+                                                                   &trans    &trans
             >;
         };
 
@@ -127,7 +141,7 @@
 &kp TAB   &none      &none         &none           &none         &none  &none                   &none                 &none      &kp NUMBER_7    &kp NUMBER_8     &kp NUMBER_9  &none         &none
 &none     &kp SLASH  &kp ASTERISK  &kp MINUS       &kp PLUS      &none                                                &none      &kp NUMBER_4    &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_0  &kp BACKSPACE
 &none     &none      &none         &none           &kp PERIOD    &none  &kp C_BRIGHTNESS_DEC    &kp C_BRIGHTNESS_INC  &none      &kp NUMBER_1    &kp NUMBER_2     &kp NUMBER_3  &none         &none
-&none     &none      &none         &kp LEFT_ARROW  &kp UP_ARROW                                                                  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none         &none         &to LAYER_MAIN
+&none     &none      &none         &kp LEFT_ARROW  &kp UP_ARROW                                                                  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none         &none         &to 0
                                                                  &none  &none                   &none                 &none
                                                    &none         &none  &none                   &none                 &kp SPACE  &none
                                                                         &kp RETURN              &none
@@ -148,34 +162,6 @@
             >;
         };
 
-        nav_layer {
-            bindings = <
-&sys_off
-&none                    &kp F1        &kp F2        &kp F3            &kp F4          &kp F5  &none     &kp F12     &kp F6             &kp F7          &kp F8        &kp F9           &kp F10  &kp F11
-&none                    &none         &none         &none             &none           &none   &trans    &kp INSERT  &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans   &trans
-&mt LEFT_CONTROL ESCAPE  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none                         &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
-&none                    &none         &kp LC(X)     &kp LC(C)         &kp LC(V)       &none   &trans    &trans      &kp LA(BACKSPACE)  &kp BACKSPACE   &kp DELETE    &kp LA(DELETE)   &trans   &trans
-&none                    &none         &none         &none             &none                                                            &none           &none         &none            &none    &none
-                                                                                       &trans  &trans    &trans      &trans
-                                                                       &trans          &trans  &trans    &trans      &trans             &trans
-                                                                                               &trans    &trans
-            >;
-        };
-
-        game_layer {
-            bindings = <
-&sys_off
-&kp ESCAPE        &trans  &trans  &trans  &trans     &trans  &kp N6    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans            &trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT    &trans  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans            &trans  &sl 8   &trans  &kp SPACE                                    &trans  &trans  &trans  &trans  &trans
-                                                     &trans  &trans    &trans  &trans
-                                          &trans     &trans  &trans    &trans  &trans  &trans
-                                                             &trans    &trans
-            >;
-        };
-
         mirror_layer {
             bindings = <
 &sys_off
@@ -187,6 +173,34 @@
                                                                 &trans  &trans    &trans  &trans
                                                         &trans  &trans  &trans    &trans  &trans  &trans
                                                                         &trans    &trans
+            >;
+        };
+
+        magic_layer {
+            bindings = <
+&sys_off
+&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &bootloader    &bootloader  &none  &none    &none    &none    &none    &to 0
+&out OUT_USB    &kp F1        &kp F2        &kp F3        &kp F4        &none  &none          &none        &none  &kp F13  &kp F14  &kp F15  &kp F16  &none
+&out OUT_BLE    &kp F5        &kp F6        &kp F7        &kp F8        &to 1                              &none  &kp F17  &kp F18  &kp F19  &kp F20  &none
+&bt BT_CLR      &kp F9        &kp F10       &kp F11       &kp F12       &to 0  &none          &none        &none  &kp F21  &kp F22  &kp F23  &kp F24  &to 1
+&bt BT_CLR_ALL  &none         &none         &none         &none                                                   &none    &none    &none    &none    &none
+                                                                        &none  &none          &none        &none
+                                                          &none         &none  &none          &none        &none  &none
+                                                                               &none          &none
+            >;
+        };
+
+        testing_layer {
+            bindings = <
+&sys_off
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                                                            &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
+                                                                      &kp NUMBER_0  &kp NUMBER_1    &kp NUMBER_0  &kp NUMBER_1
+                                                        &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_2    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4
+                                                                                    &kp NUMBER_5    &kp NUMBER_5
             >;
         };
     };
