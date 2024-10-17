@@ -10,6 +10,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
@@ -71,9 +72,9 @@
 &kp TAB                  &kp Q               &kp W               &kp E                     &kp R                 &kp T             &kp GRAVE        &kp EQUAL          &kp Y         &kp U                  &kp I                 &kp O                &kp P                        &kp BACKSLASH
 &mt LEFT_CONTROL ESCAPE  &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D       &homey_left LSHIFT F  &kp G                                                 &kp H         &homey_right RSHIFT J  &homey_right LCTRL K  &homey_right RALT L  &homey_right LGUI SEMICOLON  &kp SINGLE_QUOTE
 &kp LEFT_SHIFT           &kp Z               &kp X               &kp C                     &kp V                 &kp B             &kp BACKSPACE    &kp DELETE         &kp N         &kp M                  &kp COMMA             &kp PERIOD           &kp SLASH                    &kp RETURN
-&kp F13                  &mo 6               &kp LEFT_ALT        &kp LC(LS(LA(LEFT_GUI)))  &lt 2 SPACE                                                                               &lt 2 SPACE            &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &none                        &mo 8
-                                                                                                                 &kp LEFT_ALT      &mo 8            &kp K_APPLICATION  &kp INSERT
-                                                                                           &kp LEFT_SHIFT        &kp LEFT_CONTROL  &kp LEFT_ALT     &none              &lt 4 RETURN  &lt 3 SPACE
+&lt 8 F13                &mo 6               &kp LEFT_ALT        &kp LC(LS(LA(LEFT_GUI)))  &lt 4 TAB                                                                                 &lt 2 SPACE            &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &none                        &mo 9
+                                                                                                                 &kp LEFT_ALT      &mo 9            &kp K_APPLICATION  &kp INSERT
+                                                                                           &kp LEFT_SHIFT        &kp LEFT_CONTROL  &kp LEFT_ALT     &none              &lt 4 RETURN  &lt 2 SPACE
                                                                                                                                    &kp LEFT_GUI     &none
             >;
         };
@@ -95,13 +96,13 @@
         nav_layer {
             bindings = <
 &sys_off
-&none                    &kp F1        &kp F2        &kp F3            &kp F4          &kp F5  &none     &kp F12     &kp F6             &kp F7          &kp F8        &kp F9           &kp F10  &kp F11
-&none                    &none         &none         &none             &none           &none   &trans    &kp INSERT  &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans   &trans
-&mt LEFT_CONTROL ESCAPE  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none                         &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
-&none                    &none         &kp LC(X)     &kp LC(C)         &kp LC(V)       &none   &trans    &trans      &kp LA(BACKSPACE)  &kp BACKSPACE   &kp DELETE    &kp LA(DELETE)   &trans   &trans
-&none                    &none         &none         &none             &none                                                            &none           &none         &none            &none    &none
-                                                                                       &trans  &trans    &trans      &trans
-                                                                       &trans          &trans  &trans    &trans      &trans             &trans
+&to 0                    &kp F1        &kp F2        &kp F3            &kp F4          &kp F5  &none     &kp F12  &kp F6             &kp F7          &kp F8        &kp F9           &kp F10     &kp F11
+&none                    &none         &none         &none             &none           &none   &trans    &trans   &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT  &trans
+&mt LEFT_CONTROL ESCAPE  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none                      &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans      &trans
+&none                    &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &none   &trans    &trans   &kp LA(BACKSPACE)  &kp BACKSPACE   &kp DELETE    &kp LA(DELETE)   &trans      &trans
+&none                    &none         &none         &none             &none                                                         &to 2           &none         &none            &none       &none
+                                                                                       &trans  &trans    &trans   &trans
+                                                                       &kp SPACE       &trans  &trans    &trans   &trans             &trans
                                                                                                &trans    &trans
             >;
         };
