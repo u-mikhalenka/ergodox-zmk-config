@@ -73,7 +73,7 @@
 &mt LEFT_CONTROL ESCAPE  &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D       &homey_left LSHIFT F  &kp G                                                 &kp H         &homey_right RSHIFT J  &homey_right LCTRL K  &homey_right RALT L  &homey_right LGUI SEMICOLON  &kp SINGLE_QUOTE
 &kp LEFT_SHIFT           &kp Z               &kp X               &kp C                     &kp V                 &kp B             &kp BACKSPACE    &kp DELETE         &kp N         &kp M                  &kp COMMA             &kp PERIOD           &kp SLASH                    &kp RETURN
 &lt 8 F13                &mo 6               &kp LEFT_ALT        &kp LC(LS(LA(LEFT_GUI)))  &lt 4 TAB                                                                                 &lt 2 SPACE            &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &none                        &mo 9
-                                                                                                                 &kp LEFT_ALT      &mo 9            &kp K_APPLICATION  &kp INSERT
+                                                                                                                 &kp LEFT_ALT      &mo 8            &kp K_APPLICATION  &kp INSERT
                                                                                            &kp LEFT_SHIFT        &kp LEFT_CONTROL  &kp LEFT_ALT     &none              &lt 4 RETURN  &lt 2 SPACE
                                                                                                                                    &kp LEFT_GUI     &none
             >;
