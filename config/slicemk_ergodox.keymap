@@ -149,6 +149,7 @@
                                                           &trans         &trans  &trans          &trans        &trans  &trans
                                                                                  &trans          &trans
             >;
+        };
 
         sys_layer {
             bindings = <
