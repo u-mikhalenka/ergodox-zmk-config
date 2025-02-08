@@ -162,8 +162,7 @@
                                                           &none         &none  &none          &none        &none  &none
                                                                                &none          &none
             >;
-        }
-    };
+        };
 
         mirror_layer {
             bindings = <
