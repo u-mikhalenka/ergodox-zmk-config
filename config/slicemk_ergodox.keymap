@@ -71,14 +71,14 @@
         main_layer {
             bindings = <
 &sys_off
-&kp LS(NUMBER_4)         &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3              &kp NUMBER_4          &kp NUMBER_5      &none            &none              &kp NUMBER_6    &kp NUMBER_7                         &kp NUMBER_8          &kp NUMBER_9         &kp NUMBER_0                 &kp MINUS
-&none                    &kp Q               &homey_left HYPER W &kp E                     &kp R                 &kp T             &none            &kp EQUAL          &kp Y           &kp U                                &kp I                 &kp O                &kp P                        &kp BACKSLASH
-VM_CAPS                  &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D       &homey_left LSHIFT F  &kp G                                                 &kp H           &homey_right RSHIFT J                &homey_right RCTRL K  &homey_right LALT L  &homey_right RGUI SEMICOLON  &kp SINGLE_QUOTE
-&lt LAYER_SYS F13        &kp Z               &kp X               &kp C                     &kp V                 &kp B             &kp DELETE       &kp BACKSPACE      &kp N           &homey_right HYPER M                 &kp COMMA             &kp PERIOD           &kp SLASH                    &kp BACKSPACE
-&none                    &none               &none               &none                     &none                                                                                       &none                                &kp RIGHT_BRACKET     &kp LEFT_BRACKET     &none                        &lt LAYER_SYS F13
-                                                                                                                 &kp LEFT_ALT      &none            &kp K_APPLICATION  &kp INSERT
-                                                                                           &mt LEFT_SHIFT GRAVE  &lt LAYER_FN TAB  &kp LEFT_ALT     &none              &lt LAYER_NMPAD_R RETURN    &lt  LAYER_NAV SPACE
-                                                                                                                                   &kp LEFT_GUI     &none
+&kp LS(NUMBER_4)         &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3              &kp NUMBER_4          &kp NUMBER_5         &none            &none              &kp NUMBER_6    &kp NUMBER_7                         &kp NUMBER_8          &kp NUMBER_9         &kp NUMBER_0                 &kp MINUS
+&none                    &kp Q               &homey_left HYPER W &kp E                     &kp R                 &kp T                &none            &kp EQUAL          &kp Y           &kp U                                &kp I                 &kp O                &kp P                        &kp BACKSLASH
+VM_CAPS                  &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D       &homey_left LSHIFT F  &kp G                                                    &kp H           &homey_right RSHIFT J                &homey_right RCTRL K  &homey_right LALT L  &homey_right RGUI SEMICOLON  &kp SINGLE_QUOTE
+&lt LAYER_SYS F13        &kp Z               &kp X               &kp C                     &kp V                 &kp B                &kp DELETE       &kp BACKSPACE      &kp N           &homey_right HYPER M                 &kp COMMA             &kp PERIOD           &kp SLASH                    &kp BACKSPACE
+&none                    &none               &none               &none                     &lt LAYER_FN SPACE                                                                             &none                                &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &none                        &lt LAYER_SYS F13
+                                                                                                                 &kp LEFT_ALT         &none            &kp K_APPLICATION  &kp INSERT
+                                                                                           &mt LEFT_SHIFT GRAVE  &lt LAYER_NMPAD TAB  &kp LEFT_ALT     &none              &lt LAYER_NMPAD_R RETURN    &lt  LAYER_NAV SPACE
+                                                                                                                                      &kp LEFT_GUI     &none
             >;
         };
 
@@ -99,11 +99,11 @@ VM_CAPS                  &homey_left LGUI A  &homey_left LALT S  &homey_left LCT
         nav_layer {
             bindings = <
 &sys_off
-&none                    &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3              &kp NUMBER_4          &kp NUMBER_5      &none            &none              &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0   &kp MINUS
-&none                    &none               &kp LS(COMMA)       &kp LS(NUMBER_9)          &kp LS(NUMBER_0)      &none             &trans           &trans             &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &trans
-&trans                   &kp LEFT_GUI        &kp LEFT_ALT        &kp LEFT_CONTROL          &kp LEFT_SHIFT        &none                                                 &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans         &trans
-&none                    &kp LC(Z)           &kp LC(X)           &kp LC(C)                 &kp LC(V)             &none             &trans           &trans             &kp BACKSPACE      &kp DELETE      &trans        &trans           &trans         &trans
-&none                    &none               &none               &none                     &none                                                    &trans             &none              &none           &none         &none
+&none                    &kp NUMBER_1        &kp NUMBER_2           &kp NUMBER_3                   &kp NUMBER_4                     &kp NUMBER_5      &none            &none              &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0   &kp MINUS
+&none                    &none               &kp LS(COMMA)          &kp LS(NUMBER_9)               &kp LS(NUMBER_0)                 &kp LS(PERIOD)    &trans           &trans             &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &trans
+&trans                   &kp LEFT_GUI        &homey_left LALT EQUAL &homey_left LCTRL LEFT_BRACKET &homey_left LSHIFT RIGHT_BRACKET &none                                                 &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans         &trans
+&none                    &kp LC(Z)           &kp LC(X)              &kp LC(C)                      &kp LC(V)                        &none             &trans           &trans             &kp BACKSPACE      &kp DELETE      &trans        &trans           &trans         &trans
+&none                    &none               &none                  &none                          &none                                                               &trans             &none              &none           &none         &none
                                                                                        &trans  &trans    &trans   &trans
                                                                        &trans          &trans  &trans    &trans   &trans             &trans
                                                                                                &trans    &trans
