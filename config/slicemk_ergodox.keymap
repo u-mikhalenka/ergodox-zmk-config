@@ -10,6 +10,15 @@
 #define HYPER LC(LS(LA(LEFT_GUI)))
 #define VM_CAPS &lt LAYER_NAV ESCAPE
 
+#define LAYER_BASE_L1                &kp LS(NUMBER_4)   &kp NUMBER_1           &kp NUMBER_2          &kp NUMBER_3          &kp NUMBER_4                  &kp NUMBER_5                  &none
+#define LAYER_BASE_L2                &none              &kp Q                  &homey_left HYPER W   &kp E                 &kp R                         &kp T                         &none
+#define LAYER_BASE_L3                VM_CAPS            &homey_left LGUI A     &homey_left LALT S    &homey_left LCTRL D   &homey_left LSHIFT F          &kp G                         
+#define LAYER_BASE_L4                &lt LAYER_SYS F13  &kp Z                  &kp X                 &kp C                 &kp V                         &kp B                         &kp DELETE
+#define LAYER_BASE_R1 &none          &kp NUMBER_6       &kp NUMBER_7           &kp NUMBER_8          &kp NUMBER_9          &kp NUMBER_0                  &kp MINUS
+#define LAYER_BASE_R2 &kp EQUAL      &kp Y              &kp U                  &kp I                 &kp O                 &kp P                         &kp BACKSLASH
+#define LAYER_BASE_R3                &kp H              &homey_right RSHIFT J  &homey_right RCTRL K  &homey_right LALT L   &homey_right RGUI SEMICOLON   &kp SINGLE_QUOTE
+#define LAYER_BASE_R4 &kp BACKSPACE  &kp N              &homey_right HYPER M   &kp COMMA             &kp PERIOD            &kp SLASH                     &kp BACKSPACE
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -71,14 +80,14 @@
         main_layer {
             bindings = <
 &sys_off
-&kp LS(NUMBER_4)         &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3              &kp NUMBER_4          &kp NUMBER_5         &none            &none              &kp NUMBER_6    &kp NUMBER_7                         &kp NUMBER_8          &kp NUMBER_9         &kp NUMBER_0                 &kp MINUS
-&none                    &kp Q               &homey_left HYPER W &kp E                     &kp R                 &kp T                &none            &kp EQUAL          &kp Y           &kp U                                &kp I                 &kp O                &kp P                        &kp BACKSLASH
-VM_CAPS                  &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D       &homey_left LSHIFT F  &kp G                                                    &kp H           &homey_right RSHIFT J                &homey_right RCTRL K  &homey_right LALT L  &homey_right RGUI SEMICOLON  &kp SINGLE_QUOTE
-&lt LAYER_SYS F13        &kp Z               &kp X               &kp C                     &kp V                 &kp B                &kp DELETE       &kp BACKSPACE      &kp N           &homey_right HYPER M                 &kp COMMA             &kp PERIOD           &kp SLASH                    &kp BACKSPACE
-&none                    &none               &none               &none                     &lt LAYER_FN SPACE                                                                             &none                                &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &none                        &lt LAYER_SYS F13
-                                                                                                                 &kp LEFT_ALT         &none            &kp K_APPLICATION  &kp INSERT
-                                                                                           &mt LEFT_SHIFT GRAVE  &lt LAYER_NMPAD TAB  &kp LEFT_ALT     &none              &lt LAYER_NMPAD_R RETURN    &lt  LAYER_NAV SPACE
-                                                                                                                                      &kp LEFT_GUI     &none
+&kp LS(NUMBER_4)   &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3         &kp NUMBER_4          &kp NUMBER_5         &none            &none              &kp NUMBER_6    &kp NUMBER_7                         &kp NUMBER_8          &kp NUMBER_9         &kp NUMBER_0                 &kp MINUS
+&none              &kp Q               &homey_left HYPER W &kp E                &kp R                 &kp T                &none            &kp EQUAL          &kp Y           &kp U                                &kp I                 &kp O                &kp P                        &kp BACKSLASH
+VM_CAPS            &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D  &homey_left LSHIFT F  &kp G                                                    &kp H           &homey_right RSHIFT J                &homey_right RCTRL K  &homey_right LALT L  &homey_right RGUI SEMICOLON  &kp SINGLE_QUOTE
+&lt LAYER_SYS F13  &kp Z               &kp X               &kp C                &kp V                 &kp B                &kp DELETE       &kp BACKSPACE      &kp N           &homey_right HYPER M                 &kp COMMA             &kp PERIOD           &kp SLASH                    &kp BACKSPACE
+&none              &none               &none               &none                &lt LAYER_FN SPACE                                                                             &none                                &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &none                        &lt LAYER_SYS F13
+                                                                                                      &kp LEFT_ALT         &none            &kp K_APPLICATION  &kp INSERT
+                                                                                &mt LEFT_SHIFT GRAVE  &lt LAYER_NMPAD TAB  &kp LEFT_ALT     &none              &lt LAYER_NMPAD_R RETURN    &lt  LAYER_NAV SPACE
+                                                                                                                           &kp LEFT_GUI     &none
             >;
         };
 
@@ -102,8 +111,8 @@ VM_CAPS                  &homey_left LGUI A  &homey_left LALT S  &homey_left LCT
 &none                    &kp NUMBER_1        &kp NUMBER_2           &kp NUMBER_3                   &kp NUMBER_4                     &kp NUMBER_5      &none            &none              &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0   &kp MINUS
 &none                    &none               &kp LS(COMMA)          &kp LS(NUMBER_9)               &kp LS(NUMBER_0)                 &kp LS(PERIOD)    &trans           &trans             &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &trans
 &trans                   &kp LEFT_GUI        &homey_left LALT EQUAL &homey_left LCTRL LEFT_BRACKET &homey_left LSHIFT RIGHT_BRACKET &none                                                 &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans         &trans
-&none                    &kp LC(Z)           &kp LC(X)              &kp LC(C)                      &kp LC(V)                        &none             &trans           &trans             &kp BACKSPACE      &kp DELETE      &trans        &trans           &trans         &trans
-&none                    &none               &none                  &none                          &none                                                               &trans             &none              &none           &none         &none
+&none                    &kp LC(Z)           &kp LC(X)              &mt LC(C) LS(LEFT_BRACKET)     &mt LC(V) LS(RIGHT_BRACKET)      &none             &trans           &trans             &kp BACKSPACE      &kp DELETE      &trans        &trans           &trans         &trans
+&none                    &none               &none                  &none                          &trans                                                              &trans             &none              &none           &none         &none
                                                                                        &trans  &trans    &trans   &trans
                                                                        &trans          &trans  &trans    &trans   &trans             &trans
                                                                                                &trans    &trans
