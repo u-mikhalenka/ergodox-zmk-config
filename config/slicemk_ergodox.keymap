@@ -49,7 +49,7 @@
     NAME: NAME { \
         compatible = "zmk,behavior-hold-tap"; \
         label = "NAME"; \
-        flavor = "tap-preferred"; \
+        flavor = "balanced"; \
         hold-trigger-key-positions = <TRIGGER_KEY_POSITIONS>; \
         hold-trigger-on-release; \
         tapping-term-ms = <200>; \
