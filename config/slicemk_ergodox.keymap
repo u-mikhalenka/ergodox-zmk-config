@@ -48,7 +48,7 @@
 #define TAP_HOLD(NAME, HOLD, TAP, TRIGGER_KEY_POSITIONS) \
     NAME: NAME { \
         compatible = "zmk,behavior-hold-tap"; \
-        label = ZMK_MACRO_STRINGIFY(NAME); \
+        label = "NAME"; \
         flavor = "tap-preferred"; \
         hold-trigger-key-positions = <TRIGGER_KEY_POSITIONS>; \
         hold-trigger-on-release; // wait for other home row mods \
