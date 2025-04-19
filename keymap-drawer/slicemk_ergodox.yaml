@@ -2,7 +2,7 @@ layout: {zmk_keyboard: slicemk_ergodox}
 layers:
   main:
   - '&sys_off'
-  - Sft+4
+  - ''
   - '1'
   - '2'
   - '3'
@@ -59,20 +59,20 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Meh+LEFT GUI
   - {t: SPACE, h: fn}
   - ''
   - '['
   - ']'
   - ''
   - ''
-  - LEFT ALT
-  - ''
+  - LALT
+  - LSHIFT
   - APPLICATION
   - INSERT
   - {t: '`', h: LEFT SHIFT}
   - {t: TAB, h: num_pad}
-  - LEFT ALT
+  - LCTRL
   - ''
   - {t: RETURN, h: num_pad}
   - {t: SPACE, h: nav}
