@@ -53,10 +53,10 @@
         hold-trigger-on-release; \
         tapping-term-ms = <200>; \
         quick-tap-ms = <0>; \
-        require-prior-idle-ms = <140>; \
         #binding-cells = <2>; \
         bindings = <HOLD>, <TAP>; \
     };
+            // require-prior-idle-ms = <140>; \
 #define TAP_HOLD_LEFT(NAME, HOLD, TAP) \
     TAP_HOLD(NAME, HOLD, TAP, RIGHT_HAND_KEYS THUMB_KEYS)
 #define TAP_HOLD_RIGHT(NAME, HOLD, TAP) \
@@ -74,13 +74,13 @@
         main_layer {
             bindings = <
 &sys_off
-&kp LS(NUMBER_4)   &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3         &kp NUMBER_4          &kp NUMBER_5         &none            &none              &kp NUMBER_6    &kp NUMBER_7                         &kp NUMBER_8          &kp NUMBER_9         &kp NUMBER_0                 &kp MINUS
+&none              &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3         &kp NUMBER_4          &kp NUMBER_5         &none            &none              &kp NUMBER_6    &kp NUMBER_7                         &kp NUMBER_8          &kp NUMBER_9         &kp NUMBER_0                 &kp MINUS
 &none              &kp Q               &homey_left HYPER W &kp E                &kp R                 &kp T                &none            &kp EQUAL          &kp Y           &kp U                                &kp I                 &kp O                &kp P                        &kp BACKSLASH
 VM_CAPS            &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D  &homey_left LSHIFT F  &kp G                                                    &kp H           &homey_right RSHIFT J                &homey_right RCTRL K  &homey_right LALT L  &homey_right RGUI SEMICOLON  &kp SINGLE_QUOTE
 &lt LAYER_SYS F13  &kp Z               &kp X               &kp C                &kp V                 &kp B                &kp BACKSPACE    &kp DELETE         &kp N           &homey_right HYPER M                 &kp COMMA             &kp PERIOD           &kp SLASH                    &kp BACKSPACE
-&none              &none               &none               &none                &lt LAYER_FN SPACE                                                                             &none                                &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &none                        &none
-                                                                                                      &kp LEFT_ALT         &none            &kp K_APPLICATION  &kp INSERT
-                                                                                &mt LEFT_SHIFT GRAVE  &lt LAYER_NMPAD TAB  &kp LEFT_ALT     &none              &lt LAYER_NMPAD RETURN    &lt  LAYER_NAV SPACE
+&none              &none               &none               &kp HYPER            &lt LAYER_FN SPACE                                                                             &none                                &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &none                        &none
+                                                                                                      &kp LALT             &kp LSHIFT       &kp K_APPLICATION  &kp INSERT
+                                                                                &mt LEFT_SHIFT GRAVE  &lt LAYER_NMPAD TAB  &kp LCTRL        &none              &lt LAYER_NMPAD RETURN    &lt  LAYER_NAV SPACE
                                                                                                                            &kp LEFT_GUI     &none
             >;
         };
