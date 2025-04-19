@@ -72,6 +72,14 @@
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
         };
+
+        ctrl_v_macro: ctrl_v_macro {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_CTRL_V";
+            #binding-cells = <0>;
+            /* this will press Ctrl, tap C, then release Ctrl */
+            macro-keys = <&kp LC(C)>;
+        };
     };
 
     keymap {
@@ -111,7 +119,7 @@ VM_CAPS            &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D  
 &none                    &kp NUMBER_1        &kp NUMBER_2           &kp NUMBER_3                   &kp NUMBER_4                     &kp NUMBER_5      &none            &none              &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0   &kp MINUS
 &none                    &none               &kp LS(COMMA)          &kp LS(NUMBER_9)               &kp LS(NUMBER_0)                 &kp LS(PERIOD)    &trans           &trans             &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &trans
 &trans                   &kp LEFT_GUI        &homey_left LALT EQUAL &homey_left LCTRL LEFT_BRACKET &homey_left LSHIFT RIGHT_BRACKET &none                                                 &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans         &trans
-&none                    &kp LC(Z)           &kp LC(X)              &homey_left LC(C) LS(LEFT_BRACKET)     &homey_left LC(V) LS(RIGHT_BRACKET)      &none             &trans           &trans             &kp BACKSPACE      &kp DELETE      &trans        &trans           &trans         &trans
+&none                    &kp LC(Z)           &kp LC(X)              &homey_left LC(C) LS(LEFT_BRACKET)     &homey_left ctrl_v_macro LS(RIGHT_BRACKET)      &none             &trans           &trans             &kp BACKSPACE      &kp DELETE      &trans        &trans           &trans         &trans
 &none                    &none               &none                  &none                          &trans                                                              &trans             &none              &none           &none         &none
                                                                                        &trans  &trans    &trans   &trans
                                                                        &trans          &trans  &trans    &trans   &trans             &trans
