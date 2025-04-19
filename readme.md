@@ -1,18 +1,5 @@
-This repository contains the default ZMK user configuration for the [ErgoDox
-Wireless](https://www.slicemk.com/pages/ergodox-wireless) keyboard. While the
-[SliceMK Keymap Configurator](https://config.slicemk.com/) is recommended for
-the majority of users, the GitHub Actions workflow provides some additional
-options for customization.
-
-If you have questions, feel free to join the [SliceMK
-Discord](https://discord.gg/FQvyd7BAaA).
-
-# Getting Started
-
-- Fork this repository on GitHub.
-- Modify the `board` and `shield` values in `build.yaml` to match the ZMK build
-  target based on your hardware (see below).
-
+# Keymap
+![keymap](./keymap-drawer/slicemk_ergodox.svg)
 # Customization
 
 - To modify your keymap, edit `config/slicemk_ergodox.keymap`.

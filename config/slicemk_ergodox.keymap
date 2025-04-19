@@ -3,9 +3,8 @@
 #define LAYER_NAV 2
 #define LAYER_FN 3
 #define LAYER_NMPAD 4
-#define LAYER_NMPAD_R 5
-#define LAYER_SYS 6
-#define LAYER_MIRROR 7
+#define LAYER_SYS 5
+#define LAYER_MIRROR 6
 
 #define HYPER LC(LS(LA(LEFT_GUI)))
 #define VM_CAPS &lt LAYER_NAV ESCAPE
@@ -81,7 +80,7 @@ VM_CAPS            &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D  
 &lt LAYER_SYS F13  &kp Z               &kp X               &kp C                &kp V                 &kp B                &kp BACKSPACE    &kp DELETE         &kp N           &homey_right HYPER M                 &kp COMMA             &kp PERIOD           &kp SLASH                    &kp BACKSPACE
 &none              &none               &none               &none                &lt LAYER_FN SPACE                                                                             &none                                &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &none                        &none
                                                                                                       &kp LEFT_ALT         &none            &kp K_APPLICATION  &kp INSERT
-                                                                                &mt LEFT_SHIFT GRAVE  &lt LAYER_NMPAD TAB  &kp LEFT_ALT     &none              &lt LAYER_NMPAD_R RETURN    &lt  LAYER_NAV SPACE
+                                                                                &mt LEFT_SHIFT GRAVE  &lt LAYER_NMPAD TAB  &kp LEFT_ALT     &none              &lt LAYER_NMPAD RETURN    &lt  LAYER_NAV SPACE
                                                                                                                            &kp LEFT_GUI     &none
             >;
         };
@@ -139,20 +138,6 @@ VM_CAPS            &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D  
                                                                  &none  &none                   &none                 &none
                                                    &none         &none  &none                   &none                 &kp SPACE  &none
                                                                         &kp RETURN              &none
-            >;
-        };
-
-        num_pad_right_layer {
-            bindings = <
-&sys_off
-&none &none &kp N7 &kp N8 &kp N9     &kp EQUAL &none    &none &none &none      &none     &none    &none    &none
-&none &none &kp N4 &kp N5 &kp N6     &kp MINUS &none    &none &none &none      &none     &none    &none    &none
-&none &none &kp N1 &kp N2 &kp N3     &kp N0                   &none &kp RSHIFT &kp RCTRL &kp LALT &kp RGUI &none
-&none &none &none  &none  &kp PERIOD &none     &none    &none &none &trans     &trans    &trans   &trans   &trans
-&none &none &none  &none  &none                                     &none      &none     &none    &none    &none
-                                   &trans  &trans          &trans        &trans
-                    &trans         &trans  &trans          &trans        &trans  &trans
-                                           &trans          &trans
             >;
         };
 
