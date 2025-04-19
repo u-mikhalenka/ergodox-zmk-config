@@ -36,14 +36,14 @@
         55 56 57 58 59
 #define RIGHT_HAND_KEYS     \
 			8  9 10 11 12 13 14   \
-		22 23 24 25 26 27 28   \
-				35 36 37 38 39 40  \
-		48 49 50 51 52 53 54   \
-				60 61 62 63 64
+		   22 23 24 25 26 27 28   \
+			  35 36 37 38 39 40  \
+	       48 49 50 51 52 53 54   \
+                 60 61 62 63 64
 #define THUMB_KEYS          \
                65 66   67 68      \
-          69 70 71   72 73 74   \
-                      75   76
+            69 70 71   72 73 74   \
+                  75   76
 
 #define TAP_HOLD(NAME, HOLD, TAP, TRIGGER_KEY_POSITIONS) \
     NAME: NAME { \
@@ -67,18 +67,6 @@
     behaviors {
         TAP_HOLD_LEFT(homey_left, &kp, &kp)
         TAP_HOLD_RIGHT(homey_right, &kp, &kp)
-
-        ctrl_macro: ctrl_macro {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-
-        TAP_HOLD_LEFT(ctrl_ht, &ctrl_macro, &kp)
     };
 
     keymap {
@@ -118,7 +106,7 @@ VM_CAPS            &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D  
 &none                    &kp NUMBER_1        &kp NUMBER_2           &kp NUMBER_3                        &kp NUMBER_4                      &kp NUMBER_5      &none            &none              &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0   &kp MINUS
 &none                    &none               &kp LS(COMMA)          &kp LS(NUMBER_9)                    &kp LS(NUMBER_0)                  &kp LS(PERIOD)    &trans           &trans             &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &trans
 &trans                   &kp LEFT_GUI        &homey_left LALT EQUAL &homey_left LCTRL LEFT_BRACKET      &homey_left LSHIFT RIGHT_BRACKET  &none                                                 &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans         &trans
-&none                    &kp LC(Z)           &kp LC(X)              &homey_left LC(C) LS(LEFT_BRACKET)  &ctrl_macro V                     &none             &trans           &trans             &kp BACKSPACE      &kp DELETE      &trans        &trans           &trans         &trans
+&none                    &kp LC(Z)           &kp LC(X)              &homey_left LC(C) LS(LEFT_BRACKET)  &homey_left LC(V) LS(RIGHT_BRACKET)                     &none             &trans           &trans             &kp BACKSPACE      &kp DELETE      &trans        &trans           &trans         &trans
 &none                    &none               &none                  &none                          &trans                                                              &trans             &none              &none           &none         &none
                                                                                        &trans  &trans    &trans   &trans
                                                                        &trans          &trans  &trans    &trans   &trans             &trans
