@@ -547,15 +547,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [51, 52]
-  k: Sft+,
-  l: [main]
-- p: [16, 17]
-  k: Sft+9
+- p: [50, 51]
+  k: '&arrow'
   l: [main]
 - p: [17, 18]
+  k: Sft+9
+  l: [main]
+- p: [18, 19]
   k: Sft+0
   l: [main]
 - p: [44, 45]
-  k: Sft+9
+  k: '&arrow_fn'
   l: [main]
