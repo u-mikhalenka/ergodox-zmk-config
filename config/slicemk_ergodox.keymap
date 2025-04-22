@@ -76,31 +76,29 @@
     };
 
     macros {
-        compatible = "zmk,macros";
         arrow: arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings =
-                , <&macro_tap     &kp EQUAL>
-                , <&macro_tap     &kp LS(COMMA)>;
+            bindings
+                = <&macro_tap     &kp EQUAL>
+                , <&macro_tap     &kp LS(COMMA)>
+                ;
         };
         arrow_fn: arrow_fn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings =
-                , <&macro_tap     &kp LS(NUMBER_9)>
+            bindings
+                = <&macro_tap     &kp LS(NUMBER_9)>
                 , <&macro_tap     &kp SPACE>
                 , <&macro_tap     &kp EQUAL>
                 , <&macro_tap     &kp LS(COMMA)>
                 , <&macro_tap     &kp SPACE>
                 , <&macro_tap     &kp LS(LEFT_BRACKET)>
-                , <&macro_tap     &kp LS(RIGHT_BRACKET)>;
+                , <&macro_tap     &kp LS(RIGHT_BRACKET)>
+                ;
         };
     };
+
     keymap {
         compatible = "zmk,keymap";
 
