@@ -177,7 +177,7 @@ layers:
   - Sft+,
   - Sft+9
   - Sft+0
-  - Sft+.
+  - '&arrow'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
@@ -188,10 +188,10 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - LEFT GUI
-  - {t: '=', h: LALT}
-  - {t: '[', h: LCTRL}
-  - {t: ']', h: LSHIFT}
-  - ''
+  - LALT
+  - LCTRL
+  - LSHIFT
+  - '&arrow_fn'
   - LEFT ARROW
   - DOWN ARROW
   - UP ARROW
