@@ -64,6 +64,11 @@
     behaviors {
         TAP_HOLD_LEFT(homey_left, &kp, &kp)
         TAP_HOLD_RIGHT(homey_right, &kp, &kp)
+    };
+    
+    combos {
+        compatible = "zmk,combos";
+
         COMBO(ARROW, &kp LS(COMMA) &kp EQUAL, 51 52) // =>
         COMBO(LPRN, &kp LS(NUMBER_9), 16 17)         // (
         COMBO(LPRN, &kp LS(NUMBER_0), 17 18)         // (
