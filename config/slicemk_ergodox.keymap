@@ -81,7 +81,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap     &kp EQUAL>
-                , <&macro_tap     &kp LS(COMMA)>
+                , <&macro_tap     &kp LS(PERIOD)>
                 ;
         };
         arrow_fn: arrow_fn {
@@ -92,7 +92,7 @@
                 , <&macro_tap     &kp LS(NUMBER_0)>
                 , <&macro_tap     &kp SPACE>
                 , <&macro_tap     &kp EQUAL>
-                , <&macro_tap     &kp LS(COMMA)>
+                , <&macro_tap     &kp LS(PERIOD)>
                 , <&macro_tap     &kp SPACE>
                 , <&macro_tap     &kp LS(LEFT_BRACKET)>
                 , <&macro_tap     &kp LS(RIGHT_BRACKET)>
