@@ -69,10 +69,10 @@
     combos {
         compatible = "zmk,combos";
 
-        COMBO(ARROW,    &arrow, 50 51) // =>
-        COMBO(LPRN,     &kp LS(NUMBER_9), 17 18)         // (
-        COMBO(RPRN,     &kp LS(NUMBER_0), 18 19)         // (
-        COMBO(ARROW_FN, &arrow_fn, 44 45)         // () => {}
+        COMBO(ARROW,    &arrow, 50 51)            // m,: =>
+        COMBO(LPRN,     &kp LS(NUMBER_9), 17 18)  // we: (
+        COMBO(RPRN,     &kp LS(NUMBER_0), 18 19)  // er: (
+        COMBO(ARROW_FN, &arrow_fn, 44 45)         // cv: () => {}
     };
 
     macros {
@@ -80,8 +80,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap     &kp EQUAL>
-                , <&macro_tap     &kp LS(COMMA)>
+                = <&macro_tap     &kp LS(COMMA)>
+                , <&macro_tap     &kp EQUAL>
                 ;
         };
         arrow_fn: arrow_fn {
@@ -89,9 +89,10 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap     &kp LS(NUMBER_9)>
+                , <&macro_tap     &kp LS(NUMBER_0)>
                 , <&macro_tap     &kp SPACE>
-                , <&macro_tap     &kp EQUAL>
                 , <&macro_tap     &kp LS(COMMA)>
+                , <&macro_tap     &kp EQUAL>
                 , <&macro_tap     &kp SPACE>
                 , <&macro_tap     &kp LS(LEFT_BRACKET)>
                 , <&macro_tap     &kp LS(RIGHT_BRACKET)>
@@ -133,10 +134,10 @@ VM_CAPS            &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D  
         nav_layer {
             bindings = <
 &sys_off
-&none                    &kp NUMBER_1        &kp NUMBER_2           &kp NUMBER_3                        &kp NUMBER_4                      &kp NUMBER_5      &none            &none              &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0   &kp MINUS
-&none                    &none               &kp LS(COMMA)          &kp LS(NUMBER_9)                    &kp LS(NUMBER_0)                  &kp LS(PERIOD)    &trans           &trans             &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &trans
-&trans                   &kp LEFT_GUI        &homey_left LALT EQUAL &homey_left LCTRL LEFT_BRACKET      &homey_left LSHIFT RIGHT_BRACKET  &none                                                 &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans         &trans
-&none                    &kp LC(Z)           &kp LC(X)              &homey_left LC(C) LS(LEFT_BRACKET)  &homey_left LC(V) LS(RIGHT_BRACKET)                     &none             &trans           &trans             &kp BACKSPACE      &kp DELETE      &trans        &trans           &trans         &trans
+&none                    &kp NUMBER_1        &kp NUMBER_2           &kp NUMBER_3                        &kp NUMBER_4                        &kp NUMBER_5      &none            &none              &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0   &kp MINUS
+&none                    &none               &kp LS(COMMA)          &kp LS(NUMBER_9)                    &kp LS(NUMBER_0)                    &arrow            &trans           &trans             &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &trans
+&trans                   &kp LEFT_GUI        &kp LALT               &kp LCTRL                           &kp LSHIFT                          &arrow_fn                                             &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans         &trans
+&none                    &kp LC(Z)           &kp LC(X)              &homey_left LC(C) LS(LEFT_BRACKET)  &homey_left LC(V) LS(RIGHT_BRACKET)                   &none            &trans             &trans             &kp BACKSPACE      &kp DELETE      &trans        &trans           &trans         &trans
 &none                    &none               &none                  &none                          &trans                                                              &trans             &none              &none           &none         &none
                                                                                        &trans  &trans    &trans   &trans
                                                                        &trans          &trans  &trans    &trans   &trans             &trans
