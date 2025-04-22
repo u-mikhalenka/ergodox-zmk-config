@@ -69,10 +69,10 @@
     combos {
         compatible = "zmk,combos";
 
-        COMBO(ARROW,    &arrow, 50 51)            // m,: =>
-        COMBO(LPRN,     &kp LS(NUMBER_9), 17 18)  // we: (
-        COMBO(RPRN,     &kp LS(NUMBER_0), 18 19)  // er: (
-        COMBO(ARROW_FN, &arrow_fn, 44 45)         // cv: () => {}
+        COMBO(combo_arrow,    &arrow, 50 51)            // m,: =>
+        COMBO(combo_lprn,     &kp LS(NUMBER_9), 17 18)  // we: (
+        COMBO(combo_rprn,     &kp LS(NUMBER_0), 18 19)  // er: (
+        COMBO(combo_arrow_fn, &arrow_fn, 44 45)         // cv: () => {}
     };
 
     macros {
