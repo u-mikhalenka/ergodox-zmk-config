@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: slicemk_ergodox}
 layers:
   main:
-  - '&soft_off'
+  - '&sys_off'
   - ''
   - '1'
   - '2'
@@ -412,8 +412,8 @@ layers:
   - VOL DN
   - ''
   - ''
-  - '&sys_off'
-  - '&sys_off'
+  - ''
+  - ''
   - ''
   - ''
   - ''
