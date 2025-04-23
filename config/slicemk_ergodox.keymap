@@ -177,7 +177,7 @@ VM_CAPS            &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D  
             bindings = <
 &sys_off
 &none           &none         &none         &none         &none          &none                 &bootloader    &bootloader  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &out OUT_USB
-&none           &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN  &none          &none                 &none          &none        &none           &none         &none         &none         &none          &out OUT_BLE
+&none           &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN  &none          &none                 &sys_off       &sys_off     &none           &none         &none         &none         &none          &out OUT_BLE
 &none           &kp C_PREV    &kp C_PP      &kp C_NEXT    &none          &to LAYER_GAME                                    &none           &none         &none         &none         &none          &bt BT_CLR
 &none           &none         &none         &none         &none          &to LAYER_MAIN        &none          &none        &none           &none         &none         &none         &none          &bt BT_CLR_ALL
 &none           &none         &none         &none         &none                                                            &none         &none         &none         &none          &none
