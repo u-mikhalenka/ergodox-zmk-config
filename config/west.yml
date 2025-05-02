@@ -11,6 +11,7 @@ manifest:
       import: app/west.yml
     - name: slicemk-module
       remote: slicemk-module
+      path: modules/slicemk-module
       revision: main
   self:
     path: config
