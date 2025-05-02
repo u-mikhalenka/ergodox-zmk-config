@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: slicemk-module
-      url-base: git@github.com:u-mikhalenka/slicemk-module.git
+      url-base: https://u-mikhalenka/slicemk-module
   projects:
     - name: zmk
       remote: zmkfirmware
