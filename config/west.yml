@@ -2,13 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: slicemk-module
+      url-base: ../slicemk-module
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: slicemk-module
-      path: ../slicemk-module
+      remote: slicemk-module
       revision: main
   self:
     path: config
