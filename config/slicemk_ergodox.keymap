@@ -68,7 +68,7 @@
     combos {
         compatible = "zmk,combos";
         COMBO(combo_backspace, &kp BACKSPACE, 24 25)     // ui: backspace
-        COMBO(combo_del,       &kp DELETE, 25 26)        // ui: backspace
+        COMBO(combo_del,       &kp DELETE, 25 26)        // io: delete
         COMBO(combo_lbrkt,     &kp LEFT_BRACKET, 50 51)  // m,: [
         COMBO(combo_rbrkt,     &kp RIGHT_BRACKET, 51 52) // ,.: ]
         // COMBO(combo_arrow,     &arrow, 50 51)            // m,: =>
