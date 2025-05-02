@@ -4,5 +4,5 @@
 # "board". For a dongleless setup, you will need to modify both "board" and
 # "shield". Please see "readme.md" for more details.
 include:
-  - board: slicemk_ergodox_202207_green_left
+  - board: slicemk_ergodox_left
     shield: slicemk_ergodox_leftcentral
