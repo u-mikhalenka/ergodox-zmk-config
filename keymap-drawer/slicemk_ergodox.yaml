@@ -18,7 +18,7 @@ layers:
   - '-'
   - ''
   - Q
-  - {t: W, h: Meh+LEFT GUI}
+  - W
   - E
   - R
   - T
@@ -29,7 +29,7 @@ layers:
   - I
   - O
   - P
-  - \
+  - ''
   - {t: ESCAPE, h: nav}
   - {t: A, h: LGUI}
   - {t: S, h: LALT}
@@ -43,7 +43,7 @@ layers:
   - {t: ;, h: RGUI}
   - ''''
   - {t: F13, h: sys}
-  - Z
+  - {t: Z, h: Meh+LEFT GUI}
   - X
   - C
   - V
@@ -51,11 +51,11 @@ layers:
   - BACKSPACE
   - DELETE
   - N
-  - {t: M, h: Meh+LEFT GUI}
+  - M
   - ','
   - .
-  - /
-  - BACKSPACE
+  - {t: /, h: Meh+LEFT GUI}
+  - {t: \, h: sys}
   - ''
   - ''
   - ''
@@ -341,7 +341,7 @@ layers:
   - '8'
   - '9'
   - ''
-  - ''
+  - Sft+.
   - ''
   - LGUI
   - LEFT ALT
@@ -352,8 +352,8 @@ layers:
   - '4'
   - '5'
   - '6'
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -366,8 +366,8 @@ layers:
   - '1'
   - '2'
   - '3'
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -547,14 +547,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
+- p: [24, 25]
+  k: BACKSPACE
+  l: [main]
+- p: [25, 26]
+  k: DELETE
+  l: [main]
 - p: [50, 51]
-  k: '&arrow'
+  k: '['
   l: [main]
-- p: [17, 18]
-  k: Sft+9
-  l: [main]
-- p: [18, 19]
-  k: Sft+0
+- p: [51, 52]
+  k: ']'
   l: [main]
 - p: [44, 45]
   k: '&arrow_fn'
