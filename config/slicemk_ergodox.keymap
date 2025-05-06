@@ -102,7 +102,7 @@
                 ;
         };
     };
-
+// &none              &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3         &kp NUMBER_4          &kp NUMBER_5         &none            &none              &kp NUMBER_6    &kp NUMBER_7                         &kp NUMBER_8          &kp NUMBER_9         &kp NUMBER_0                 &kp MINUS
     keymap {
         compatible = "zmk,keymap";
 
@@ -137,11 +137,11 @@ SYS_OFF
         nav_layer {
             bindings = <
 SYS_OFF
-&none                    &kp NUMBER_1        &kp NUMBER_2           &kp NUMBER_3                        &kp NUMBER_4                        &kp NUMBER_5      &none            &none              &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0   &kp MINUS
-&none                    &none               &kp LS(COMMA)          &kp LS(NUMBER_9)                    &kp LS(NUMBER_0)                    &arrow            &trans           &trans             &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT     &trans
-&trans                   &kp LEFT_GUI        &kp LALT               &kp LCTRL                           &kp LSHIFT                          &arrow_fn                                             &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans         &trans
-&none                    &kp LC(Z)           &kp LC(X)              &homey_left LC(C) LS(LEFT_BRACKET)  &homey_left LC(V) LS(RIGHT_BRACKET)                   &none            &trans             &trans             &kp BACKSPACE      &kp DELETE      &trans        &trans           &trans         &trans
-&none                    &none               &none                  &none                          &trans                                                              &trans             &none              &none           &none         &none
+&none                    &kp NUMBER_1        &kp NUMBER_2           &kp NUMBER_3                        &kp NUMBER_4                        &kp NUMBER_5      &none            &none              &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8   &kp NUMBER_9     &kp NUMBER_0   &kp MINUS
+&none                    &none               &kp LS(COMMA)          &kp LS(NUMBER_9)                    &kp LS(NUMBER_0)                    &arrow            &trans           &trans             &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP    &kp END          &kp INSERT     &trans
+&trans                   &kp LEFT_GUI        &kp LALT               &kp LCTRL                           &kp LSHIFT                          &arrow_fn                                             &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans         &trans
+&none                    &kp LC(Z)           &kp LC(X)              &homey_left LC(C) LS(LEFT_BRACKET)  &homey_left LC(V) LS(RIGHT_BRACKET) &none             &trans           &trans             &kp BACKSPACE      &kp DELETE      &trans         &trans         &trans         &trans
+&none                    &none               &none                  &none                               &trans                              &trans            &none            &none              &none               &none
                                                                                        &trans  &trans    &trans   &trans
                                                                        &trans          &trans  &trans    &trans   &trans             &trans
                                                                                                &trans    &trans
@@ -169,10 +169,10 @@ SYS_OFF
 &none     &none      &none         &none           &none          &none  &none                   &none                 &kp EQUAL    &kp NUMBER_7    &kp NUMBER_8     &kp NUMBER_9  &none          &kp LS(PERIOD)
 &none     &kp LGUI   &kp LEFT_ALT  &kp LCTRL       &kp LEFT_SHIFT &none                                                &kp MINUS    &kp NUMBER_4    &kp NUMBER_5     &kp NUMBER_6  &trans         &trans
 &none     &none      &none         &none           &none          &none  &none                   &none                 &kp NUMBER_0 &kp NUMBER_1    &kp NUMBER_2     &kp NUMBER_3  &trans         &trans
-&none     &none      &none         &none           &none                                                                            &none           &none            &none         &none         &none  
-                                                                 &none  &none                   &none                 &none
-                                                   &none         &none  &none                   &none                 &kp SPACE  &none
-                                                                        &kp RETURN              &none
+&none     &none      &none         &none           &none                                                                            &trans          &trans           &trans        &trans         &trans
+                                                                                       &trans  &trans    &trans   &trans
+                                                                       &trans          &trans  &trans    &trans   &trans             &trans
+                                                                                               &trans    &trans
             >;
         };
 
@@ -180,8 +180,8 @@ SYS_OFF
             bindings = <
 SYS_OFF
 &none           &none         &none         &none         &none          &none                 &bootloader    &bootloader  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &out OUT_USB
-&none           &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN  &none          &none                 &none          &none        &none           &none         &none         &none         &none          &out OUT_BLE
-&none           &kp C_PREV    &kp C_PP      &kp C_NEXT    &none          &to LAYER_GAME                                    &none           &none         &none         &none         &none          &bt BT_CLR
+&none           &none         &kp C_MUTE    &kp C_VOL_UP  &kp C_VOL_DN   &none                 &none          &none        &none           &none         &none         &none         &none          &out OUT_BLE
+&none           &none         &kp C_PREV    &kp C_PP      &kp C_NEXT     &to LAYER_GAME                                    &none           &none         &none         &none         &none          &bt BT_CLR
 &none           &none         &none         &none         &none          &to LAYER_MAIN        &none          &none        &none           &none         &none         &none         &none          &bt BT_CLR_ALL
 &none           &none         &none         &none         &none                                                            &none         &none         &none         &none          &none
                                                                         &none  &none          &none        &none
