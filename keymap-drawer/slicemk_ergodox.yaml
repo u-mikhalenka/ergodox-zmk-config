@@ -373,23 +373,23 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
-  - ''
-  - SPACE
-  - ''
-  - RETURN
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   sys:
   - '&sys_off'
   - ''
@@ -407,6 +407,7 @@ layers:
   - {t: BT, h: '4'}
   - OUT USB
   - ''
+  - ''
   - MUTE
   - VOL UP
   - VOL DN
@@ -418,13 +419,12 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - OUT BLE
+  - ''
   - ''
   - PREV
   - PP
   - NEXT
-  - ''
   - {t: game, h: toggle}
   - ''
   - ''
