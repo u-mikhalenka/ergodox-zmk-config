@@ -138,7 +138,7 @@ SYS_OFF
             bindings = <
 SYS_OFF
 &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3 &kp NUMBER_4  &kp NUMBER_5      &none      &none   &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8   &kp NUMBER_9     &kp NUMBER_0   &kp MINUS
-&none   &none         &kp none      &kp none     &none         &arrow            &trans     &trans  &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP    &kp END          &kp INSERT     &trans
+&none   &none         &none         &none        &none         &arrow            &trans     &trans  &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP    &kp END          &kp INSERT     &trans
 &trans  &kp LGUI      &kp LALT      &kp LCTRL    &kp LSHFT     &arrow_fn                            &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans         &trans
 &none   &kp LC(Z)     &kp LC(X)     &kp LC(C)    &kp LC(V)     &none             &trans     &trans  &kp BACKSPACE      &kp DELETE      &trans         &trans           &trans         &trans
 &none   &none         &none         &none        &trans                                                                &trans          &none          &none            &none          &none
