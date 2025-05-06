@@ -34,7 +34,7 @@ layers:
   - {t: A, h: LGUI}
   - {t: S, h: LALT}
   - {t: D, h: LCTRL}
-  - {t: F, h: LSHIFT}
+  - {t: F, h: LSHFT}
   - G
   - H
   - {t: J, h: RSHIFT}
@@ -67,16 +67,16 @@ layers:
   - ''
   - ''
   - LALT
-  - LSHIFT
+  - LSHFT
   - APPLICATION
   - INSERT
-  - {t: '`', h: LEFT SHIFT}
+  - {t: '`', h: LSHFT}
   - {t: TAB, h: num_pad}
   - LCTRL
   - ''
   - {t: RETURN, h: num_pad}
   - {t: SPACE, h: nav}
-  - LEFT GUI
+  - LGUI
   - ''
   game:
   - '&sys_off'
@@ -108,7 +108,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT CONTROL
+  - LCTRL
   - A
   - S
   - D
@@ -120,7 +120,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT SHIFT
+  - LSHFT
   - Z
   - X
   - C
@@ -174,9 +174,9 @@ layers:
   - '-'
   - ''
   - ''
-  - Sft+,
-  - Sft+9
-  - Sft+0
+  - none
+  - none
+  - ''
   - '&arrow'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -187,10 +187,10 @@ layers:
   - INSERT
   - {t: ▽, type: trans}
   - {type: held}
-  - LEFT GUI
+  - LGUI
   - LALT
   - LCTRL
-  - LSHIFT
+  - LSHFT
   - '&arrow_fn'
   - LEFT ARROW
   - DOWN ARROW
@@ -201,8 +201,8 @@ layers:
   - ''
   - Ctl+Z
   - Ctl+X
-  - {t: 'Sft+[', h: Ctl+C}
-  - {t: 'Sft+]', h: Ctl+V}
+  - Ctl+C
+  - Ctl+V
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -268,7 +268,7 @@ layers:
   - LGUI
   - LEFT ALT
   - LCTRL
-  - LEFT SHIFT
+  - LSHFT
   - {t: ▽, type: trans}
   - F11
   - F4
@@ -322,10 +322,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '{'
+  - '['
+  - ']'
+  - '}'
   - ''
   - ''
   - ''
@@ -340,13 +340,13 @@ layers:
   - '7'
   - '8'
   - '9'
-  - ''
-  - Sft+.
+  - '!'
+  - '>'
   - ''
   - LGUI
   - LEFT ALT
   - LCTRL
-  - LEFT SHIFT
+  - LSHFT
   - ''
   - '-'
   - '4'
