@@ -111,23 +111,23 @@
 SYS_OFF
 &none              &kp NUMBER_1        &kp NUMBER_2        &kp NUMBER_3         &kp NUMBER_4          &kp NUMBER_5         &none            &none              &kp NUMBER_6    &kp NUMBER_7                         &kp NUMBER_8          &kp NUMBER_9         &kp NUMBER_0                 &kp MINUS
 &none              &kp Q               &kp W               &kp E                &kp R                 &kp T                &kp EQUAL        &kp MINUS          &kp Y           &kp U                                &kp I                 &kp O                &kp P                        &none
-VM_CAPS            &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D  &homey_left LSHIFT F  &kp G                                                    &kp H           &homey_right RSHIFT J                &homey_right RCTRL K  &homey_right LALT L  &homey_right RGUI SEMICOLON  &kp SINGLE_QUOTE
+VM_CAPS            &homey_left LGUI A  &homey_left LALT S  &homey_left LCTRL D  &homey_left LSHFT  F  &kp G                                                    &kp H           &homey_right RSHIFT J                &homey_right RCTRL K  &homey_right LALT L  &homey_right RGUI SEMICOLON  &kp SINGLE_QUOTE
 &lt LAYER_SYS F13  &homey_left HYPER Z &kp X               &kp C                &kp V                 &kp B                &kp BACKSPACE    &kp DELETE         &kp N           &kp M                                &kp COMMA             &kp PERIOD           &homey_right HYPER SLASH     &lt LAYER_SYS BACKSLASH
 &none              &none               &none               &kp HYPER            &lt LAYER_FN SPACE                                                                             &none                                &kp LEFT_BRACKET      &kp RIGHT_BRACKET    &none                        &none
-                                                                                                      &kp LALT             &kp LSHIFT       &kp K_APPLICATION  &kp INSERT
-                                                                                &mt LEFT_SHIFT GRAVE  &lt LAYER_NMPAD TAB  &kp LCTRL        &none              &lt LAYER_NMPAD RETURN    &lt  LAYER_NAV SPACE
-                                                                                                                           &kp LEFT_GUI     &none
+                                                                                                      &kp LALT             &kp LSHFT        &kp K_APPLICATION  &kp INSERT
+                                                                                &mt LSHFT GRAVE       &lt LAYER_NMPAD TAB  &kp LCTRL        &none              &lt LAYER_NMPAD RETURN    &lt  LAYER_NAV SPACE
+                                                                                                                           &kp LGUI         &none
             >;
         };
 
         game_layer {
             bindings = <
 SYS_OFF
-&kp ESCAPE        &kp NUMBER_1  &kp NUMBER_2         &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5  &kp N6    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB           &kp Q         &kp W                &kp E         &kp R            &kp T         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_CONTROL  &kp A         &kp S                &kp D         &kp F            &kp G                           &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT    &kp Z         &kp X                &kp C         &kp V            &kp C         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans            &trans        &sl LAYER_MIRROR     &trans        &kp SPACE                                                &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2         &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5  &kp N6    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB     &kp Q         &kp W                &kp E         &kp R            &kp T         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL   &kp A         &kp S                &kp D         &kp F            &kp G                           &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT   &kp Z         &kp X                &kp C         &kp V            &kp C         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &sl LAYER_MIRROR     &trans        &kp SPACE                                                &trans  &trans  &trans  &trans  &trans
                                                      &trans  &trans    &trans  &trans
                                           &trans     &trans  &trans    &trans  &trans  &trans
                                                              &trans    &trans
@@ -137,11 +137,11 @@ SYS_OFF
         nav_layer {
             bindings = <
 SYS_OFF
-&none                    &kp NUMBER_1        &kp NUMBER_2           &kp NUMBER_3                        &kp NUMBER_4                        &kp NUMBER_5      &none            &none              &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8   &kp NUMBER_9     &kp NUMBER_0   &kp MINUS
-&none                    &none               &kp LS(COMMA)          &kp LS(NUMBER_9)                    &kp LS(NUMBER_0)                    &arrow            &trans           &trans             &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP    &kp END          &kp INSERT     &trans
-&trans                   &kp LEFT_GUI        &kp LALT               &kp LCTRL                           &kp LSHIFT                          &arrow_fn                                             &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans         &trans
-&none                    &kp LC(Z)           &kp LC(X)              &homey_left LC(C) LS(LEFT_BRACKET)  &homey_left LC(V) LS(RIGHT_BRACKET) &none             &trans           &trans             &kp BACKSPACE      &kp DELETE      &trans         &trans         &trans         &trans
-&none                    &none               &none                  &none                               &trans                              &trans            &none            &none              &none               &none
+&none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3 &kp NUMBER_4  &kp NUMBER_5      &none      &none   &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8   &kp NUMBER_9     &kp NUMBER_0   &kp MINUS
+&none   &none         &kp none      &kp none     &none         &arrow            &trans     &trans  &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP    &kp END          &kp INSERT     &trans
+&trans  &kp LGUI      &kp LALT      &kp LCTRL    &kp LSHFT     &arrow_fn                            &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans         &trans
+&none   &kp LC(Z)     &kp LC(X)     &kp LC(C)    &kp LC(V)     &none             &trans     &trans  &kp BACKSPACE      &kp DELETE      &trans         &trans           &trans         &trans
+&none   &none         &none         &none        &trans                                                                &trans          &none          &none            &none          &none
                                                                                        &trans  &trans    &trans   &trans
                                                                        &trans          &trans  &trans    &trans   &trans             &trans
                                                                                                &trans    &trans
@@ -153,7 +153,7 @@ SYS_OFF
 &trans
 &trans  &trans    &trans        &trans     &trans          &trans  &trans    &trans  &trans   &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &trans        &trans     &trans          &trans  &trans    &trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans
-&trans  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans                    &kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans
+&trans  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT       &trans                    &kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans
 &trans  &trans    &trans        &trans     &trans          &trans  &trans    &trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans  &trans
 &trans  &trans    &trans        &trans     &trans                                             &trans  &trans  &trans  &trans  &trans
                                                            &trans  &trans    &trans  &trans
@@ -165,11 +165,11 @@ SYS_OFF
         num_pad_layer {
             bindings = <
 SYS_OFF
-&none     &none      &none         &none           &none          &none  &none                   &none                 &none        &none           &none            &none         &none          &none
-&none     &none      &none         &none           &none          &none  &none                   &none                 &kp EQUAL    &kp NUMBER_7    &kp NUMBER_8     &kp NUMBER_9  &none          &kp LS(PERIOD)
-&none     &kp LGUI   &kp LEFT_ALT  &kp LCTRL       &kp LEFT_SHIFT &none                                                &kp MINUS    &kp NUMBER_4    &kp NUMBER_5     &kp NUMBER_6  &trans         &trans
-&none     &none      &none         &none           &none          &none  &none                   &none                 &kp NUMBER_0 &kp NUMBER_1    &kp NUMBER_2     &kp NUMBER_3  &trans         &trans
-&none     &none      &none         &none           &none                                                                            &trans          &trans           &trans        &trans         &trans
+&none     &none      &none         &none           &none          &none  &none    &none  &kp LBRC   &kp LBKT  &kp RBKT  &kp RBRC  &none     &none
+&none     &none      &none         &none           &none          &none  &none    &none  &kp EQUAL  &kp N7    &kp N8    &kp N9    &kp EXCL  &kp GT
+&none     &kp LGUI   &kp LEFT_ALT  &kp LCTRL       &kp LSHFT      &none                  &kp MINUS  &kp N4    &kp N5    &kp N6    &trans    &trans
+&none     &none      &none         &none           &none          &none  &none    &none  &kp N0     &kp N1    &kp N2    &kp N3    &trans    &trans
+&none     &none      &none         &none           &none                                            &trans    &trans    &trans    &trans    &trans
                                                                                        &trans  &trans    &trans   &trans
                                                                        &trans          &trans  &trans    &trans   &trans             &trans
                                                                                                &trans    &trans
