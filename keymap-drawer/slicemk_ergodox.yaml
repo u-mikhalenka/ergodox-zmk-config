@@ -30,7 +30,7 @@ layers:
   - O
   - P
   - ''
-  - {t: ESCAPE, h: '&lt 2'}
+  - {t: ESCAPE, h: nav}
   - {t: A, h: LGUI}
   - {t: S, h: LALT}
   - {t: D, h: LCTRL}
@@ -42,7 +42,7 @@ layers:
   - {t: L, h: LALT}
   - {t: ;, h: RGUI}
   - ''''
-  - {t: F13, h: '&lt 5'}
+  - {t: F13, h: sys}
   - {t: Z, h: Meh+LEFT GUI}
   - X
   - C
@@ -55,12 +55,12 @@ layers:
   - ','
   - .
   - {t: /, h: Meh+LEFT GUI}
-  - {t: \, h: '&lt 5'}
+  - {t: \, h: sys}
   - ''
   - ''
   - ''
   - ''
-  - {t: SPACE, h: '&lt 3'}
+  - {t: SPACE, h: fn}
   - ''
   - ''
   - ''
@@ -71,11 +71,11 @@ layers:
   - APPLICATION
   - INSERT
   - {t: '`', h: LSHFT}
-  - {t: TAB, h: '&lt 4'}
+  - {t: TAB, h: num_pad}
   - LCTRL
   - ''
-  - {t: RETURN, h: '&lt 4'}
-  - {t: SPACE, h: '&lt 2'}
+  - {t: RETURN, h: num_pad}
+  - {t: SPACE, h: nav}
   - LGUI
   - ''
   game:
@@ -186,7 +186,7 @@ layers:
   - END
   - INSERT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - LGUI
   - LALT
   - LCTRL
@@ -294,7 +294,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -383,7 +383,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -432,7 +432,7 @@ layers:
   - ''
   - ''
   - BT CLR
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
