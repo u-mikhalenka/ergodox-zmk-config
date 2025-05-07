@@ -549,16 +549,11 @@ layers:
 combos:
 - p: [24, 25]
   k: BACKSPACE
-  l: [main]
 - p: [25, 26]
   k: DELETE
-  l: [main]
 - p: [50, 51]
   k: '['
-  l: [main]
 - p: [51, 52]
   k: ']'
-  l: [main]
 - p: [44, 45]
   k: '&arrow_fn'
-  l: [main]
