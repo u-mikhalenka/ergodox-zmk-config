@@ -55,8 +55,7 @@
   combo_##NAME { \
     timeout-ms = <50>; \
     bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <0>; \
+    key-positions = <KEYPOS>;
   };
 
 / {
