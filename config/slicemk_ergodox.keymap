@@ -35,10 +35,10 @@
             69 70 71   72 73 74   \
                   75   76
 
-#define TAP_HOLD(NAME, HOLD, TAP, TRIGGER_KEY_POSITIONS) \
+#define TAP_HOLD(NAME, HOLD, TAP, FLAVOR, TRIGGER_KEY_POSITIONS) \
     NAME: NAME { \
         compatible = "zmk,behavior-hold-tap"; \
-        flavor = "balanced"; \
+        flavor = FLAVOR; \
         hold-trigger-key-positions = <TRIGGER_KEY_POSITIONS>; \
         hold-trigger-on-release; \
         tapping-term-ms = <200>; \
@@ -46,24 +46,24 @@
         #binding-cells = <2>; \
         bindings = <HOLD>, <TAP>; \
     };
-#define TAP_HOLD_LEFT(NAME, HOLD, TAP) \
+#define TAP_HOLD_LEFT(NAME, HOLD, TAP, FLAVOR) \
     TAP_HOLD(NAME, HOLD, TAP, RIGHT_HAND_KEYS THUMB_KEYS)
-#define TAP_HOLD_RIGHT(NAME, HOLD, TAP) \
+#define TAP_HOLD_RIGHT(NAME, HOLD, TAP, FLAVOR) \
     TAP_HOLD(NAME, HOLD, TAP, LEFT_HAND_KEYS THUMB_KEYS)
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
-    timeout-ms = <50>; \
+    timeout-ms = <30>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
   };
 
 / {
     behaviors {
-        TAP_HOLD_LEFT(thl, &kp, &kp)
-        TAP_HOLD_RIGHT(thr, &kp, &kp)
-        TAP_HOLD_LEFT(mol, &mo, &kp)
-        TAP_HOLD_RIGHT(mor, &mo, &kp)
+        TAP_HOLD_LEFT(thl, &kp, &kp, "balanced")
+        TAP_HOLD_RIGHT(thr, &kp, &kp, "balanced")
+        TAP_HOLD_LEFT(mol, &mo, &kp, "hold-preferred")
+        TAP_HOLD_RIGHT(mor, &mo, &kp, "hold-preferred")
     };
     
     combos {
