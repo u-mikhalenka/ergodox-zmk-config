@@ -30,20 +30,20 @@ layers:
   - O
   - P
   - ''
-  - '&mol 2 ESCAPE'
-  - '&thl LGUI A'
-  - '&thl LALT S'
-  - '&thl LCTRL D'
-  - '&thl LSHFT F'
+  - {t: ESCAPE, h: nav}
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHFT}
   - G
   - H
-  - '&thr RSHIFT J'
-  - '&thr RCTRL K'
-  - '&thr LALT L'
-  - '&thr RGUI SEMICOLON'
+  - {t: J, h: RSHIFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: LALT}
+  - {t: ;, h: RGUI}
   - ''''
-  - '&mol 5 F13'
-  - '&thl LC(LS(LA(LEFT_GUI))) Z'
+  - {t: F13, h: sys}
+  - {t: Z, h: Meh+LEFT GUI}
   - X
   - C
   - V
@@ -54,13 +54,13 @@ layers:
   - M
   - ','
   - .
-  - '&thr LC(LS(LA(LEFT_GUI))) SLASH'
-  - '&mor 5 BACKSLASH'
+  - {t: /, h: Meh+LEFT GUI}
+  - {t: \, h: sys}
   - ''
   - ''
   - ''
   - ''
-  - '&mol 3 SPACE'
+  - {t: SPACE, h: fn}
   - ''
   - ''
   - ''
@@ -71,11 +71,11 @@ layers:
   - APPLICATION
   - INSERT
   - {t: '`', h: LSHFT}
-  - '&mol 4 TAB'
+  - {t: TAB, h: num_pad}
   - LCTRL
   - ''
-  - '&mor 4 RETURN'
-  - '&mor 2 SPACE'
+  - {t: RETURN, h: num_pad}
+  - {t: SPACE, h: nav}
   - LGUI
   - ''
   game:
@@ -186,7 +186,7 @@ layers:
   - END
   - INSERT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - LGUI
   - LALT
   - LCTRL
@@ -294,7 +294,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -383,7 +383,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -432,7 +432,7 @@ layers:
   - ''
   - ''
   - BT CLR
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
