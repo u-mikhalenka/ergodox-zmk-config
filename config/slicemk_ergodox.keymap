@@ -173,13 +173,13 @@
         nav_layer {
             bindings = <
 &sys_off
-&none     &kp SPACE  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &none     &none   &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0  &kp MINUS
-&none     &kp EQUAL  &kp LBKT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RBKT          &trans    &trans  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT    &trans
-&trans    &kp LGUI   &kp LALT       &kp LCTRL             &kp LSHFT              &arrow_fn                           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans        &trans
-&none     &kp LC(Z)  &kp LC(X)      &kp LC(C)             &kp LC(V)              &kp LS(N4)        &trans    &trans  &kp BACKSPACE   &kp DELETE      &trans        &trans           &trans        &trans
-&none     &none      &none          &none                 &trans                                                                     &trans          &none         &none            &none         &none
-                                                                                 &trans            &none     &none   &none
-                                                          &none                  &trans            &trans    &trans  &trans          &trans
+&trans    &kp SPACE  &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &trans    &trans  &trans          &trans          &trans        &trans           &trans      &trans
+&trans    &kp EQUAL  &kp LBKT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RBKT          &trans    &trans  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp INSERT  &trans
+&trans    &kp LGUI   &kp LALT       &kp LCTRL             &kp LSHFT              &arrow_fn                           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans      &trans
+&trans    &kp LC(Z)  &kp LC(X)      &kp LC(C)             &kp LC(V)              &kp LS(N4)        &trans    &trans  &kp BACKSPACE   &kp DELETE      &trans        &trans           &trans      &trans
+&trans    &trans     &trans         &trans                &trans                                                                     &trans          &trans        &trans           &trans      &trans
+                                                                                 &trans            &trans    &trans  &trans
+                                                          &trans                 &trans            &trans    &trans  &trans          &trans
                                                                                                    &trans    &trans
             >;
         };
