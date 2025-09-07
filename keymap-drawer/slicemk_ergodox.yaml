@@ -58,7 +58,7 @@ layers:
   - {t: \, h: sys}
   - {t: F13, h: sys}
   - ''
-  - ''
+  - Meh+LGUI
   - ''
   - {t: SPACE, h: fn}
   - ''
@@ -125,7 +125,7 @@ layers:
   - X
   - C
   - V
-  - C
+  - B
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
