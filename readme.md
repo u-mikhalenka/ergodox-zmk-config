@@ -1,3 +1,5 @@
+[Keymap editor](https://nickcoutsos.github.io/keymap-editor)
+
 # Keymap
 ![keymap](./keymap-drawer/slicemk_ergodox.svg)
 # Customization

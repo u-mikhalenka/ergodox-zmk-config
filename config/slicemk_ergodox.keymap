@@ -4,8 +4,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-// Ergodox Wireless key positions index for positional hold-tap
-
 / {
     behaviors {
         thl: thl {
@@ -79,22 +77,6 @@
             key-positions = <51 52>;
             require-prior-idle-ms = <50>;
         };
-
-        // combo_arrow {
-        //     timeout-ms = <30>;
-        //     bindings = <&arrow>;
-        //     key-positions = <50 51>;
-        // };
-        // combo_lprn {
-        //     timeout-ms = <30>;
-        //     bindings = <&kp LS(NUMBER_9)>;
-        //     key-positions = <17 18>;
-        // };
-        // combo_rprn {
-        //     timeout-ms = <30>;
-        //     bindings = <&kp LS(NUMBER_0)>;
-        //     key-positions = <18 19>;
-        // };
 
         combo_arrow_fn {
             bindings = <&arrow_fn>;
