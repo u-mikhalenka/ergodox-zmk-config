@@ -127,13 +127,13 @@
         main_layer {
             bindings = <
 &sys_off
-&kp GRAVE      &kp N1                       &kp N2                &kp N3        &kp N4        &kp N5      &none         &none          &kp N6     &kp N7         &kp N8        &kp N9       &kp N0                           &kp EQUAL
-&kp TAB        &kp Q                        &kp W                 &kp E         &kp R         &kp T       &none         &none          &kp Y      &kp U          &kp I         &kp O        &kp P                            &kp MINUS
-&mol 2 ESCAPE  &thl LGUI A                  &thl LALT S           &thl LCTRL D  &thl LSHFT F  &kp G                                    &kp H      &thr RSHIFT J  &thr RCTRL K  &thr LALT L  &thr RGUI SEMICOLON              &kp SINGLE_QUOTE
-&mol 5 F13     &thl LC(LS(LA(LEFT_GUI))) Z  &kp X                 &kp C         &kp V         &kp B       &kp DELETE    &kp BACKSPACE  &kp N      &kp M          &kp COMMA     &kp PERIOD   &thr LC(LS(LA(LEFT_GUI))) SLASH  &mor 5 BACKSLASH
-&mol 5 F13     &none                        &kp LC(LS(LA(LGUI)))  &none         &mol 3 SPACE                                                      &none          &kp LBKT      &kp RBKT     &none                            &mor 5 F13
+&kp GRAVE      &kp N1                       &kp N2                &kp N3        &kp N4        &kp N5      &none         &none          &kp N6        &kp N7         &kp N8        &kp N9       &kp N0                           &kp EQUAL
+&kp TAB        &kp Q                        &kp W                 &kp E         &kp R         &kp T       &none         &none          &kp Y         &kp U          &kp I         &kp O        &kp P                            &kp MINUS
+&mol 2 ESCAPE  &thl LGUI A                  &thl LALT S           &thl LCTRL D  &thl LSHFT F  &kp G                                    &kp H         &thr RSHIFT J  &thr RCTRL K  &thr LALT L  &thr RGUI SEMICOLON              &kp SINGLE_QUOTE
+&mol 5 F13     &thl LC(LS(LA(LEFT_GUI))) Z  &kp X                 &kp C         &kp V         &kp B       &kp DELETE    &kp BACKSPACE  &kp N         &kp M          &kp COMMA     &kp PERIOD   &thr LC(LS(LA(LEFT_GUI))) SLASH  &mor 5 BACKSLASH
+&mol 5 F13     &none                        &kp LC(LS(LA(LGUI)))  &none         &mol 3 SPACE                                                         &none          &kp LBKT      &kp RBKT     &none                            &mor 5 F13
                                                                                               &none       &none         &kp K_APP      &none
-                                                                                &kp LSHIFT    &mol 4 TAB  &none         &none          &kp ENTER  &mor 2 SPACE
+                                                                                &kp LSHIFT    &mol 4 TAB  &none         &none          &mor 3 ENTER  &mor 2 SPACE
                                                                                                           &none         &none
             >;
         };
