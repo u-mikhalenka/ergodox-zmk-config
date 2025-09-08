@@ -74,7 +74,7 @@ layers:
   - {t: TAB, h: num_pad}
   - ''
   - ''
-  - ENTER
+  - {t: ENTER, h: fn}
   - {t: SPACE, h: nav}
   - ''
   - ''
