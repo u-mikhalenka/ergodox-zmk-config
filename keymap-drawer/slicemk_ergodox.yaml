@@ -31,16 +31,16 @@ layers:
   - P
   - '-'
   - {t: ESCAPE, h: nav}
-  - {t: A, h: LGUI}
+  - {t: A, h: LCTRL}
   - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
+  - {t: D, h: LEFT COMMAND}
   - {t: F, h: LSHFT}
   - G
   - H
   - {t: J, h: RSHIFT}
-  - {t: K, h: RCTRL}
+  - {t: K, h: LEFT COMMAND}
   - {t: L, h: LALT}
-  - {t: ;, h: RGUI}
+  - {t: ;, h: RCTRL}
   - ''''
   - {t: F13, h: sys}
   - {t: Z, h: Meh+LEFT GUI}
@@ -71,11 +71,11 @@ layers:
   - APP
   - ''
   - LSHIFT
-  - {t: TAB, h: num_pad}
+  - {t: TAB, h: nav}
   - ''
   - ''
   - {t: ENTER, h: fn}
-  - {t: SPACE, h: nav}
+  - {t: SPACE, h: sym}
   - ''
   - ''
   game:
@@ -272,9 +272,9 @@ layers:
   - F11
   - ''
   - RSHFT
-  - RCTRL
+  - RIGHT COMMAND
   - LALT
-  - RGUI
+  - RCTRL
   - ''
   - ''
   - ''
@@ -312,7 +312,7 @@ layers:
   - ''
   - ''
   - ''
-  num_pad:
+  sym:
   - '&sys_off'
   - ''
   - ''
@@ -329,29 +329,11 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '='
-  - '7'
-  - '8'
-  - '9'
-  - '!'
-  - '>'
-  - ''
-  - LGUI
-  - LEFT ALT
-  - LCTRL
-  - LSHFT
-  - ''
   - '-'
-  - '4'
-  - '5'
-  - '6'
+  - <
+  - '{'
+  - '}'
+  - '>'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -361,11 +343,29 @@ layers:
   - ''
   - ''
   - ''
+  - SPACE
+  - LEFT ALT
+  - (
+  - )
+  - '`'
   - ''
-  - '0'
-  - '1'
-  - '2'
-  - '3'
+  - RIGHT SHIFT
+  - RCMD
+  - RIGHT ALT
+  - RCTRL
+  - {t: ▽, type: trans}
+  - ''
+  - \
+  - ^
+  - '['
+  - ']'
+  - $
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -373,6 +373,10 @@ layers:
   - ''
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -384,10 +388,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   sys:
