@@ -70,7 +70,7 @@ layers:
   - ''
   - APP
   - ''
-  - LSHIFT
+  - {t: '`', h: LSHIFT}
   - {t: TAB, h: nav}
   - ''
   - ''
