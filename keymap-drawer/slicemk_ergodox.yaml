@@ -187,9 +187,9 @@ layers:
   - INSERT
   - {t: ▽, type: trans}
   - {type: held}
-  - LGUI
-  - LALT
   - LCTRL
+  - LALT
+  - LEFT COMMAND
   - LSHFT
   - '&arrow_fn'
   - LEFT ARROW
